@@ -39,17 +39,22 @@
 
     <link rel="stylesheet" media="screen" href="about.css" type="text/css">
 
-
-  <!-- =======================================================
-    Theme Name: DevFolio
-    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
+<script>
+    /*function check(e)
+    {
+    alert(e.keyCode);
+    }*/
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
+                alert('not allowed');
+            }
+            return false;
+    };
+    </script>
 
   </head>
 
-<body id="page-top" style="background-color: black;">
+<body id="page-top" style="background-color: black;" oncontextmenu="return false">
 
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
@@ -437,7 +442,7 @@
       <div class="socials">
                   <ul>
                       <li><a href=""><span class="ico-circle" style="color: black;"><span style="color: grey;"><i class="fa fa-facebook-official fa-lg"></i></span></span></a></li>
-                      <li><a href="http://www.instagram/____54nj4y"><span class="ico-circle"><span style="color: grey;"><i class="fa fa-instagram fa-lg"></i></span></span></a></li>
+                      <li><a href="https://www.instagram/____54nj4y"><span class="ico-circle"><span style="color: grey;"><i class="fa fa-instagram fa-lg"></i></span></span></a></li>
                       <li><a href="http://sanjayaradya.github.io"><span class="ico-circle"><span style="color: grey;"><i class="fa fa-github fa-lg" aria-hidden="true"></i></span></span></a></li>
                     </ul>
           </div></div></div></section>
